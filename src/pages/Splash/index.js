@@ -11,8 +11,9 @@ import {
 } from 'react-native';
 import { MyButton, MyGap } from '../../components';
 import { MyDimensi, colors, fonts, windowHeight, windowWidth } from '../../utils';
-import { MYAPP, getData } from '../../utils/localStorage';
+import { MYAPP, getData, storeData } from '../../utils/localStorage';
 import LinearGradient from 'react-native-linear-gradient';
+import moment from 'moment';
 
 
 export default function Splash({ navigation }) {

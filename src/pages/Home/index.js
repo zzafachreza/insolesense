@@ -56,7 +56,7 @@ const MyMenu = ({ onPress, img, label, backgroundColor, desc }) => {
 export default function Home({ navigation, route }) {
   const [user, setUser] = useState({});
   const [tekanan, setTekanan] = useState({
-    hall: ''
+    hall: 'Belum ada'
   })
 
   const __getUser = () => {
@@ -64,7 +64,9 @@ export default function Home({ navigation, route }) {
       setUser(u)
     })
     getData('hasil').then(u => {
-      setTekanan(u)
+      if (u) {
+        setTekanan(u)
+      }
     });
 
 

@@ -1,0 +1,14 @@
+com/insolesense/MainApplication.java
+ com.insolesense.MainApplication
+ com.insolesense.MainApplication$1
+com/insolesense/MainActivity.java
+ com.insolesense.MainActivity
+com/rutanambon/ReactNativeFlipper.java
+ com.rutanambon.ReactNativeFlipper
+ com.rutanambon.ReactNativeFlipper$1
+ com.rutanambon.ReactNativeFlipper$2
+ com.rutanambon.ReactNativeFlipper$2$1
+com/insolesense/BuildConfig.java
+ com.insolesense.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
