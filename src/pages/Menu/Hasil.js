@@ -131,7 +131,11 @@ export default function Hasil({ navigation, route }) {
                             </View>
                         </View>
                     </View>
-
+                    <View style={{
+                        marginTop: 10
+                    }}>
+                        <MyButton onPress={() => navigation.pop(2)} title="Halaman Utama" style={{}} />
+                    </View>
                 </View>
             </View>
         </LinearGradient>

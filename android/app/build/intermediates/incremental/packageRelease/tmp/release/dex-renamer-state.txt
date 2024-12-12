@@ -1,4 +1,4 @@
-#Thu Dec 12 10:34:34 WIB 2024
+#Thu Dec 12 11:00:27 WIB 2024
 base.1=/Users/my/Documents/project/insolesense/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
 path.1=classes2.dex
 base.0=/Users/my/Documents/project/insolesense/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex

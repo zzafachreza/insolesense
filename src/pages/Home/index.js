@@ -24,6 +24,7 @@ import MyLoading from '../../components/MyLoading';
 import LinearGradient from 'react-native-linear-gradient';
 import { Icon } from 'react-native-elements';
 import { Linking } from 'react-native';
+import { useIsFocused } from '@react-navigation/native';
 
 
 const MyMenu = ({ onPress, img, label, backgroundColor, desc }) => {
@@ -80,10 +81,12 @@ export default function Home({ navigation, route }) {
     navigation.navigate('Referensi')
   };
 
-
+  const isFocus = useIsFocused();
   useEffect(() => {
-    __getUser();
-  }, [])
+    if (isFocus) {
+      __getUser();
+    }
+  }, [isFocus])
   return (
     <LinearGradient colors={[colors.primary, colors.tertiary]} style={{
       flex: 1,

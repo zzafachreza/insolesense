@@ -86,7 +86,7 @@ export default function Artikel({ navigation, route }) {
             backgroundColor: colors.white
         }}>
 
-            <MyHeader title="Riwayat Pelayanan" onPress={() => navigation.goBack()} />
+            <MyHeader title="Informasi Kesehatan" onPress={() => navigation.goBack()} />
             {!loading &&
                 <View style={{
                     flex: 1,

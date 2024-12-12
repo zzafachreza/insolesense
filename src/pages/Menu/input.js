@@ -14,10 +14,10 @@ export default function InputSwamedikasi({ navigation, route }) {
     const [visible, setVisible] = useState(false);
     const [kirim, setKirim] = useState({
         fid_pengguna: route.params.id_pengguna,
-        usia: '',
-        jenis_kelamin: 'Laki-laki',
-        tinggi_badan: '',
-        berat_badan: '',
+        usia: route.params.usia,
+        jenis_kelamin: route.params.jenis_kelamin,
+        tinggi_badan: route.params.tinggi,
+        berat_badan: route.params.berat,
         RF: '',
         RD: '',
         RA: '',
@@ -148,7 +148,10 @@ export default function InputSwamedikasi({ navigation, route }) {
             hkanan: HKANAN,
             hkiri: HKIRI
         });
-        navigation.navigate('Hasil', {
+
+
+        // setLoading(true)
+        axios.post(apiURL + 'insert_laporan', {
             ...kirim,
             bmi: BMI,
             all: ALL,
@@ -158,25 +161,29 @@ export default function InputSwamedikasi({ navigation, route }) {
             kiri: KIRI,
             hkanan: HKANAN,
             hkiri: HKIRI
+        }).then(res => {
+            console.log(res.data);
+            setLoading(false)
+            if (res.data.status == 200) {
+                navigation.navigate('Hasil', {
+                    ...kirim,
+                    bmi: BMI,
+                    all: ALL,
+                    hall: HALL,
+                    hbmi: HBMI,
+                    kanan: KANAN,
+                    kiri: KIRI,
+                    hkanan: HKANAN,
+                    hkiri: HKIRI
+                })
+
+                showMessage({
+                    type: 'success',
+                    icon: 'success',
+                    message: res.data.message
+                })
+            }
         })
-
-
-        // setLoading(true)
-        // axios.post(apiURL + 'insert_laporan', {
-        //     ...kirim,
-        //     umur: moment().diff(kirim.tanggal_lahir, 'year')
-        // }).then(res => {
-        //     console.log(res.data);
-        //     setLoading(false)
-        //     if (res.data.status == 200) {
-        //         navigation.goBack();
-        //         showMessage({
-        //             type: 'success',
-        //             icon: 'success',
-        //             message: res.data.message
-        //         })
-        //     }
-        // })
 
 
 
