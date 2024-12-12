@@ -1,0 +1,192 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.insolesense"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:9:7-69
+11-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:9:24-66
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:10:5-65
+12-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:10:22-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:11:5-80
+13-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:11:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:12:3-79
+14-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:12:20-76
+15    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+15-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:13:3-86
+15-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:13:20-83
+16    <!--
+17         Required to keep CPU alive while downloading files
+18        (NOT to keep screen awake)
+19    -->
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:5-68
+20-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:22-65
+21    <!--
+22         Required to poll the state of the network connection
+23        and respond to changes
+24    -->
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to check whether Wi-Fi is enabled -->
+25-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:5-79
+25-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:22-76
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+26-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:5-76
+26-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:22-73
+27    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+27-->[:react-native-get-location] /Users/my/Documents/project/insolesense/node_modules/react-native-get-location/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+27-->[:react-native-get-location] /Users/my/Documents/project/insolesense/node_modules/react-native-get-location/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-78
+28    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Required to access Google Play Licensing -->
+28-->[:react-native-sweet-alert] /Users/my/Documents/project/insolesense/node_modules/react-native-sweet-alert/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-78
+28-->[:react-native-sweet-alert] /Users/my/Documents/project/insolesense/node_modules/react-native-sweet-alert/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-75
+29    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+29-->[:rn-fetch-blob] /Users/my/Documents/project/insolesense/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-73
+29-->[:rn-fetch-blob] /Users/my/Documents/project/insolesense/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-70
+30
+31    <application
+31-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:16:5-39:19
+32        android:name="com.insolesense.MainApplication"
+32-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:19:7-38
+33        android:allowBackup="false"
+33-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:23:7-34
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.3.1] /Users/my/.gradle/caches/transforms-3/b4065c810b656d7c5afd531e785b6691/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
+35        android:exported="true"
+35-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:18:7-30
+36        android:icon="@mipmap/ic_launcher"
+36-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:21:7-41
+37        android:label="@string/app_name"
+37-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:20:7-39
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:22:7-52
+39        android:theme="@style/AppTheme"
+39-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:25:7-38
+40        android:usesCleartextTraffic="true" >
+40-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:17:5-40
+41        <activity
+41-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:26:7-38:18
+42            android:name="com.insolesense.MainActivity"
+42-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:28:9-37
+43            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+43-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:30:9-86
+44            android:exported="true"
+44-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:27:9-32
+45            android:label="@string/app_name"
+45-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:29:9-41
+46            android:launchMode="singleTask"
+46-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:31:9-40
+47            android:windowSoftInputMode="adjustResize" >
+47-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:32:9-51
+48            <intent-filter>
+48-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:33:9-37:25
+49                <action android:name="android.intent.action.MAIN" />
+49-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:34:13-65
+49-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:34:21-62
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:35:13-73
+51-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:35:23-70
+52
+53                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+53-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:36:14-78
+53-->/Users/my/Documents/project/insolesense/android/app/src/main/AndroidManifest.xml:36:22-76
+54            </intent-filter>
+55        </activity>
+56
+57        <provider
+57-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:9-45:20
+58            android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
+58-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-70
+59            android:authorities="com.insolesense.provider"
+59-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-60
+60            android:exported="false"
+60-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-37
+61            android:grantUriPermissions="true" >
+61-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-47
+62            <meta-data
+62-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-44:58
+63                android:name="android.support.FILE_PROVIDER_PATHS"
+63-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:43:17-67
+64                android:resource="@xml/provider_paths" />
+64-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:44:17-55
+65        </provider>
+66        <provider
+66-->[:react-native-image-picker] /Users/my/Documents/project/insolesense/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+67            android:name="com.imagepicker.ImagePickerProvider"
+67-->[:react-native-image-picker] /Users/my/Documents/project/insolesense/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-63
+68            android:authorities="com.insolesense.imagepickerprovider"
+68-->[:react-native-image-picker] /Users/my/Documents/project/insolesense/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-71
+69            android:exported="false"
+69-->[:react-native-image-picker] /Users/my/Documents/project/insolesense/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+70            android:grantUriPermissions="true" >
+70-->[:react-native-image-picker] /Users/my/Documents/project/insolesense/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+71            <meta-data
+71-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-44:58
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:43:17-67
+73                android:resource="@xml/imagepicker_provider_paths" />
+73-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:44:17-55
+74        </provider>
+75        <provider
+75-->[:react-native-share] /Users/my/Documents/project/insolesense/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+76            android:name="cl.json.RNShareFileProvider"
+76-->[:react-native-share] /Users/my/Documents/project/insolesense/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-55
+77            android:authorities="com.insolesense.rnshare.fileprovider"
+77-->[:react-native-share] /Users/my/Documents/project/insolesense/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-72
+78            android:exported="false"
+78-->[:react-native-share] /Users/my/Documents/project/insolesense/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+79            android:grantUriPermissions="true" >
+79-->[:react-native-share] /Users/my/Documents/project/insolesense/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+80            <meta-data
+80-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-44:58
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:43:17-67
+82                android:resource="@xml/share_download_paths" />
+82-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:44:17-55
+83        </provider>
+84        <provider
+84-->[:react-native-webview] /Users/my/Documents/project/insolesense/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+85            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+85-->[:react-native-webview] /Users/my/Documents/project/insolesense/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-83
+86            android:authorities="com.insolesense.fileprovider"
+86-->[:react-native-webview] /Users/my/Documents/project/insolesense/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-64
+87            android:exported="false"
+87-->[:react-native-webview] /Users/my/Documents/project/insolesense/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+88            android:grantUriPermissions="true" >
+88-->[:react-native-webview] /Users/my/Documents/project/insolesense/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+89            <meta-data
+89-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-44:58
+90                android:name="android.support.FILE_PROVIDER_PATHS"
+90-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:43:17-67
+91                android:resource="@xml/file_provider_paths" />
+91-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:44:17-55
+92        </provider>
+93        <provider
+93-->[:rn-fetch-blob] /Users/my/Documents/project/insolesense/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-42:20
+94            android:name="com.RNFetchBlob.Utils.FileProvider"
+94-->[:rn-fetch-blob] /Users/my/Documents/project/insolesense/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-62
+95            android:authorities="com.insolesense.provider"
+95-->[:rn-fetch-blob] /Users/my/Documents/project/insolesense/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-60
+96            android:exported="false"
+96-->[:rn-fetch-blob] /Users/my/Documents/project/insolesense/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-37
+97            android:grantUriPermissions="true" >
+97-->[:rn-fetch-blob] /Users/my/Documents/project/insolesense/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-47
+98            <meta-data
+98-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-44:58
+99                android:name="android.support.FILE_PROVIDER_PATHS"
+99-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:43:17-67
+100                android:resource="@xml/provider_paths" />
+100-->[:react-native-blob-util] /Users/my/Documents/project/insolesense/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:44:17-55
+101        </provider>
+102    </application>
+103
+104</manifest>

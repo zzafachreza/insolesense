@@ -1,0 +1,9 @@
+com/insolesense/MainApplication.java
+ com.insolesense.MainApplication
+ com.insolesense.MainApplication$1
+com/insolesense/MainActivity.java
+ com.insolesense.MainActivity
+com/insolesense/BuildConfig.java
+ com.insolesense.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
