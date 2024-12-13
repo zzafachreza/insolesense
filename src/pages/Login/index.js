@@ -18,10 +18,7 @@ export default function Login({ navigation }) {
         password: '',
     });
 
-    const [comp, setComp] = useState({});
-
-
-
+   
     const [loading, setLoading] = useState(false)
 
     const handleLogin = () => {
@@ -85,6 +82,11 @@ export default function Login({ navigation }) {
             })
 
     }
+
+    const [comp, setComp] = useState({});
+
+
+
 
     useEffect(() => {
         axios.post(apiURL + 'company').then(res => {
